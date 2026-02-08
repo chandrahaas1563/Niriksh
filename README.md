@@ -133,22 +133,12 @@ results/confusion_matrix_fp32.png
 
 ```bash
 .
-├── dataset/
-│   └── dataset.zip
-├── notebooks/
-│   ├── training_colab.ipynb
-│   └── evaluation_colab.ipynb
 ├── src/
-│   ├── preprocess.py
-│   ├── train.py
-│   ├── export_onnx.py
-│   └── infer.py
+│   ├── training_eval_colab.ipynb
 ├── models/
 │   └── mobilenetv3_fp32.onnx
 ├── results/
 │   └── confusion_matrix_fp32.png
-├── docs/
-│   └── Final_Documentation.pdf
 ├── requirements.txt
 └── README.md
 ```
