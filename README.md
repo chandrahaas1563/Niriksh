@@ -30,10 +30,13 @@ This project aims to design a **compact, accurate, and deployable AI model** tha
 
 ## 🏗️ Approach
 
+<img width="1256" height="497" alt="Screenshot 2026-02-09 044937" src="https://github.com/user-attachments/assets/3c4ec538-2bb6-4ef0-8c21-42b97f3239e3" />
+
+
 1. **Dataset Preparation**
    - Created a custom dataset with **7000+ images**
    - Classes:
-     - `bridges`, `cracks`, `opens`, `cmp`, `ler`, `vias`, `good`
+     - `bridges`, `cracks`, `opens`, `cmp`, `ler`, `vias`, `good`.
    - Applied data augmentation:
      - Brightness variation
      - Contrast adjustment
@@ -134,10 +137,9 @@ The confusion matrix for the INT16 ONNX model is available in:
 ## 🗺️ Repository Structure
 
 ```bash
-.
-├── src/
+├── script/
 │   ├── Niriksh.ipynb 
-├── models/
+├── model/
 │   └── Niriksh_mobilenetv3_int16.onnx
 └── README.md
 ```
@@ -146,51 +148,17 @@ The confusion matrix for the INT16 ONNX model is available in:
 
 ## 🚀 How to Run
 
-### 1️⃣ Install Dependencies
+Download the script file "Niriksh.ipynb".
+Open Google Colab and upload it.
 
-```bash
-pip install -r requirements.txt
-```
+### 1️⃣ Setting Dataset
+* Make a shortcut of the provided dataset on your Google Drive account.
 
-### 2️⃣ Preprocess Dataset
-
-```bash
-python src/preprocess.py
-```
-
-### 3️⃣ Train Model
-
-```bash
-python src/train.py
-```
-
-### 4️⃣ Export to ONNX
-
-```bash
-python src/export_onnx.py
-```
-
-### 5️⃣ Run Inference
-
-```bash
-python src/infer.py --image path/to/image.jpg
-```
-
----
-
-## 📄 Documentation
-
-* 📘 **Final Report**: `docs/Final_Documentation.pdf`
-* 🗂️ **Dataset**: `dataset/dataset.zip`
-* 🧠 **Trained Model (ONNX)**: `models/mobilenetv3_fp32.onnx`
-* 📊 **Results & Confusion Matrix**: `results/`
-* 💻 **Complete Code**:
-
-  * Preprocessing
-  * Training
-  * Evaluation
-  * ONNX Export
-  * Inference
+### 2️⃣ Running the Model
+* Download the script file "Niriksh.ipynb".
+* Open Google Colab and upload it.
+* Make the respective file paths changes.
+* Hit Run all.
 
 ---
 
@@ -209,23 +177,3 @@ python src/infer.py --image path/to/image.jpg
   * Scalable to new defect classes
 
 ---
-
-## 📚 Learnings
-
-* Building efficient CNNs using MobileNetV3
-* Designing robust datasets with augmentation
-* Transfer learning and fine-tuning for industrial vision tasks
-* Exporting and validating models using ONNX Runtime
-* End-to-end ML pipeline design for edge deployment
-
----
-
-## 🏆 Hackathon Submission Checklist
-
-* ✅ Filled PDF documentation
-* ✅ Dataset ZIP with required folder structure
-* ✅ Trained ONNX model (FP32)
-* ✅ Metrics: Accuracy, Precision, Recall, F1-Score, Confusion Matrix, Model Size
-* ✅ Training platform specified: Google Colab (NVIDIA T4)
-* ✅ Complete code for preprocessing, training, and inference
-* ✅ GitHub repository with README
