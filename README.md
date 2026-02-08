@@ -64,31 +64,14 @@ The dataset is provided as a **single ZIP file** with the following structure:
 
 ```bash
 dataset.zip
-└── Dataset/
-    ├── Train/
-    │   ├── good/
-    │   ├── bridges/
-    │   ├── cracks/
-    │   ├── opens/
-    │   ├── cmp/
-    │   ├── ler/
-    │   └── vias/
-    ├── Validation/
-    │   ├── good/
-    │   ├── bridges/
-    │   ├── cracks/
-    │   ├── opens/
-    │   ├── cmp/
-    │   ├── ler/
-    │   └── vias/
-    └── Test/
-        ├── good/
-        ├── bridges/
-        ├── cracks/
-        ├── opens/
-        ├── cmp/
-        ├── ler/
-        └── vias/
+└── Niriksh2.0/
+    ├── GOOD/
+    ├── BRIDGES/
+    ├── CRACK/
+    ├── OPENS/
+    ├── CMP/
+    ├── LER/
+    └── VIAS/
 ````
 
 * Total images: **7000+ (original + augmented)**
