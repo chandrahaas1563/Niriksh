@@ -53,14 +53,14 @@ This project aims to design a **compact, accurate, and deployable AI model** tha
    - Used callbacks such as **EarlyStopping** to prevent overfitting
 
 4. **Deployment Preparation**
-   - Exported trained model to **FP32 ONNX**
+   - Exported trained model to **INT16 ONNX**
    - Evaluated using **ONNX Runtime on CPU**
 
 ---
 
 ## 🗂️ Dataset Structure
 
-The dataset is provided as a **single ZIP file** with the following structure:
+The dataset is designed with the following structure:
 
 ```bash
 dataset.zip
@@ -73,7 +73,7 @@ dataset.zip
     ├── LER/
     └── VIAS/
 ````
-
+**Access the dataset here:** https://drive.google.com/drive/folders/1IJQq4K5m4Q3ggibhiM3BFa9Ulwhy0yNn?usp=drive_link
 * Total images: **7000+ (original + augmented)**
 
 ---
@@ -136,12 +136,9 @@ The confusion matrix for the INT16 ONNX model is available in:
 ```bash
 .
 ├── src/
-│   ├── training_eval_colab.ipynb 
+│   ├── Niriksh.ipynb 
 ├── models/
-│   └── mobilenetv3_fp32.onnx
-├── results/
-│   └── confusion_matrix_fp32.png
-├── requirements.txt
+│   └── Niriksh_mobilenetv3_int16.onnx
 └── README.md
 ```
 
