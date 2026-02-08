@@ -125,7 +125,7 @@ dataset.zip
 The confusion matrix for the INT16 ONNX model is available in:
 
 
-<img width="650" height="510" alt="Screenshot 2026-02-09 043747" src="https://github.com/user-attachments/assets/26179f5c-7f5d-42d9-8c72-8663587f6bda" />
+<img width="720" height="520" alt="Screenshot 2026-02-09 043747" src="https://github.com/user-attachments/assets/26179f5c-7f5d-42d9-8c72-8663587f6bda" />
 
 
 
