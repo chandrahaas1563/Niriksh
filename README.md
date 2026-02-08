@@ -3,8 +3,6 @@
 An **Edge-AI–ready deep learning system** for **automatic detection and classification of semiconductor wafer and die defects**.  
 This project was developed for a hackathon and focuses on **high-accuracy, efficient inference** using **MobileNetV3** and export to **ONNX** for deployment.
 
-All training and experimentation were performed on **Google Colab using an NVIDIA T4 GPU**.
-
 ---
 
 ## 📌 Problem Statement
@@ -62,7 +60,7 @@ This project aims to design a **compact, accurate, and deployable AI model** tha
 
 ## 🗂️ Dataset Structure
 
-The dataset is designed with the following structure:
+* The dataset is designed with the following structure:
 
 ```bash
 dataset.zip
@@ -75,14 +73,14 @@ dataset.zip
     ├── LER/
     └── VIAS/
 ````
-**Access the dataset here:** https://drive.google.com/drive/folders/1IJQq4K5m4Q3ggibhiM3BFa9Ulwhy0yNn?usp=drive_link
+#### **Access the dataset here:** https://drive.google.com/drive/folders/1IJQq4K5m4Q3ggibhiM3BFa9Ulwhy0yNn?usp=drive_link
 * Total images: **7000+ (original + augmented)**
 
 ---
 
 ## 🧠 Model Details
 
-* **Architecture**: MobileNetV3-Large + ONNX INT16 Quantization
+* **Architecture**: MobileNetV3-Large + INT16 ONNX Quantization
 * **Input Resolution**: 224 × 224
 * **Training Method**: Transfer Learning + Fine-Tuning
 * **Model Format**: ONNX (INT16)
@@ -94,7 +92,7 @@ dataset.zip
 
 ## 📊 Model Results (Test Set – INT16 ONNX)
 
-The model was evaluated on a held-out **test set of 1376 images** covering all defect classes.
+* The model was evaluated on a held-out **test set of 1376 images** covering all defect classes.
 
 ### 🔹 Overall Performance
 
@@ -137,7 +135,7 @@ The confusion matrix for the INT16 ONNX model is available in:
 
 ```bash
 ├── script/
-│   ├── Niriksh.ipynb 
+│   ├── Niriksh_mobilenetv3.ipynb 
 ├── model/
 │   └── Niriksh_mobilenetv3_int16.onnx
 └── README.md
@@ -147,14 +145,11 @@ The confusion matrix for the INT16 ONNX model is available in:
 
 ## 🚀 How to Run
 
-Download the script file "Niriksh.ipynb".
-Open Google Colab and upload it.
-
 ### 1️⃣ Setting Dataset
 * Make a shortcut of the provided dataset on your Google Drive account.
 
 ### 2️⃣ Running the Model
-* Download the script file "Niriksh.ipynb".
+* Download the script file "Niriksh_mobilenetv3.ipynb".
 * Open Google Colab and upload it.
 * Make the respective file paths changes.
 * Hit Run all.
@@ -168,6 +163,7 @@ Open Google Colab and upload it.
   * Inline wafer inspection
   * Die-level quality control
   * Embedded vision systems
+  
 * Benefits:
 
   * High accuracy
