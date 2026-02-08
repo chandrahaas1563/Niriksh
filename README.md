@@ -80,52 +80,54 @@ dataset.zip
 
 ## 🧠 Model Details
 
-* **Architecture**: MobileNetV3-Large
+* **Architecture**: MobileNetV3-Large + ONNX INT16 Quantization
 * **Input Resolution**: 224 × 224
 * **Training Method**: Transfer Learning + Fine-Tuning
-* **Model Format**: ONNX (FP32)
+* **Model Format**: ONNX (INT16)
 * **Training Platform**: Google Colab
 * **GPU Used**: NVIDIA T4
 * **Inference Platform**: CPU (ONNX Runtime)
 
 ---
 
-## 📊 Model Results (Test Set – FP32 ONNX)
+## 📊 Model Results (Test Set – INT16 ONNX)
 
-The model was evaluated on a held-out **test set of 902 images** covering all defect classes.
+The model was evaluated on a held-out **test set of 1376 images** covering all defect classes.
 
 ### 🔹 Overall Performance
 
-* **Accuracy**: **98.07%**
-* **Precision**: **0.9935**
-* **Recall**: **0.9933**
-* **F1-Score**: **0.9934**
-* **Model Size**: **12.35 MB**
+* **Accuracy**: **98.04%**
+* **Precision**: **0.9812**
+* **Recall**: **0.9804**
+* **F1-Score**: **0.9803**
+* **Model Size**: **6.74 MB**
 
 ---
 
 ### 🔹 Per-Class Performance
 
-| Class       | Precision | Recall   | F1-Score | Support |
-| ----------- | --------- | -------- | -------- | ------- |
-| Cracks      | 0.93      | 0.96     | 0.95     | 45      |
-| LER         | 1.00      | 1.00     | 1.00     | 52      |
-| Bridges     | 1.00      | 0.99     | 0.99     | 77      |
-| CMP         | 1.00      | 1.00     | 1.00     | 354     |
-| Good        | 0.99      | 0.98     | 0.98     | 140     |
-| Opens       | 0.94      | 1.00     | 0.97     | 15      |
-| Vias        | 1.00      | 1.00     | 1.00     | 219     |
-| **Overall** | **0.99**  | **0.99** | **0.99** | **902** |
+| Class       | Precision | Recall | F1-Score | Support |
+|------------|-----------|--------|----------|---------|
+| Cracks     | 0.99      | 1.00   | 1.00     | 185     |
+| LER        | 0.92      | 1.00   | 0.96     | 191     |
+| Bridges    | 0.98      | 0.93   | 0.95     | 216     |
+| CMP        | 0.99      | 1.00   | 0.99     | 197     |
+| Good       | 1.00      | 0.95   | 0.97     | 193     |
+| Opens      | 0.98      | 1.00   | 0.99     | 201     |
+| Vias       | 1.00      | 1.00   | 1.00     | 193     |
+| **Overall**| **0.98**      | **0.98**   | **0.98**     | **1376**    |
+
 
 ---
 
 ### 🔹 Confusion Matrix
 
-The confusion matrix for the FP32 ONNX model is available in:
+The confusion matrix for the INT16 ONNX model is available in:
 
-```
-results/confusion_matrix_fp32.png
-```
+
+<img width="650" height="510" alt="Screenshot 2026-02-09 043747" src="https://github.com/user-attachments/assets/26179f5c-7f5d-42d9-8c72-8663587f6bda" />
+
+
 
 ---
 
@@ -134,7 +136,7 @@ results/confusion_matrix_fp32.png
 ```bash
 .
 ├── src/
-│   ├── training_eval_colab.ipynb
+│   ├── training_eval_colab.ipynb 
 ├── models/
 │   └── mobilenetv3_fp32.onnx
 ├── results/
