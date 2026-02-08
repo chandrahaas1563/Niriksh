@@ -91,7 +91,7 @@ dataset.zip
         └── vias/
 ````
 
-* Total images: **4000+ (original + augmented)**
+* Total images: **7000+ (original + augmented)**
 
 ---
 
@@ -113,7 +113,7 @@ The model was evaluated on a held-out **test set of 902 images** covering all de
 
 ### 🔹 Overall Performance
 
-* **Accuracy**: **99.33%**
+* **Accuracy**: **98.07%**
 * **Precision**: **0.9935**
 * **Recall**: **0.9933**
 * **F1-Score**: **0.9934**
