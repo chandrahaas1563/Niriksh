@@ -53,7 +53,6 @@ This project aims to design a **compact, accurate, and deployable AI model** tha
    - Transfer learning using pre-trained MobileNetV3
    - Stage 1: Train classification head with frozen backbone
    - Stage 2: Fine-tune full network
-   - Used callbacks such as **EarlyStopping** to prevent overfitting
 
 4. **Deployment Preparation**
    - Exported trained model to **INT16 ONNX**
