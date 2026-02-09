@@ -34,7 +34,7 @@ This project aims to design a **compact, accurate, and deployable AI model** tha
 1. **Dataset Preparation**
    - Created a custom dataset with **7000+ images**
    - Classes:
-     - `bridges`, `cracks`, `opens`, `cmp`, `ler`, `vias`, `good`.
+     - `BRIDGES`, `CRACK`, `OPENS`, `CMP`, `LER`, `VIAS`, `GOOD`
    - Applied data augmentation:
      - Brightness variation
      - Contrast adjustment
