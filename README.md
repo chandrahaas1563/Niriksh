@@ -138,10 +138,10 @@ The confusion matrix for the INT16 ONNX model is available in:
 │   ├── dataset_link.md
 ├── idea_submission/
 │   ├── Niriksh_phase1.pdf
-├── script/
-│   ├── Niriksh_mobilenetv3.ipynb 
 ├── model/
 │   └── Niriksh_mobilenetv3_int16.onnx
+├── script/
+│   ├── Niriksh_mobilenetv3.ipynb 
 └── README.md
 ```
 
