@@ -228,7 +228,7 @@ The confusion matrix for the INT16 ONNX model is available in:
 
 ### 🔹 Confusion Matrix for **hackathon_test_dataset**
 
-<img width="960" height="497" alt="confusion_matrix_hackathon_dataset" src="https://github.com/user-attachments/assets/eabbd9d9-59bd-46ce-b76f-d7e08626053f" />
+<img width="652" height="497" alt="confusion_matrix_hackathon_dataset" src="https://github.com/user-attachments/assets/eabbd9d9-59bd-46ce-b76f-d7e08626053f" />
 
 
 
