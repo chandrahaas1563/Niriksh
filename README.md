@@ -193,7 +193,7 @@ The confusion matrix for the INT16 ONNX model is available in:
 |---------------------|-------------|
 | Overall Accuracy     | 40.62%      |
 | Average Confidence   | 88.80%      |
-| Total Images         | 256         |
+| Total Images         | 296         |
 
 ---
 
