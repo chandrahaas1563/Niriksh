@@ -186,7 +186,7 @@ The confusion matrix for the INT16 ONNX model is available in:
 # Phase: 2
 
 ## 📊 Model Results
-
+---
 
 ## 📊 Overall Results
 
@@ -232,7 +232,7 @@ The confusion matrix for the INT16 ONNX model is available in:
 ---
 
 
-### 🔹 Confusion Matrix for **hackathon_test_dataset**
+## 🔹 Confusion Matrix for **hackathon_test_dataset**
 
 <img width="650" height="520" alt="confusion_matrix_hackathon_dataset" src="https://github.com/user-attachments/assets/eabbd9d9-59bd-46ce-b76f-d7e08626053f" />
 
