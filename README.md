@@ -186,7 +186,99 @@ The confusion matrix for the INT16 ONNX model is available in:
 
 # Phase 2 Results
 
-**Overall Performance**
+## 📊 Model Results (Test Set – INT16 ONNX)
+
+* The model was evaluated on a held-out **test set of 1376 images** covering all defect classes.
+
+### 🔹 Overall Performance
+
+* **Accuracy**: **98.04%** (May vary between 95-98)
+* **Precision**: **0.9812**
+* **Recall**: **0.9804**
+* **F1-Score**: **0.9803**
+* **Model Size**: **6.74 MB**
+
+---
+
+### 🔹 Per-Class Performance
+
+| Class       | Precision | Recall | F1-Score | Support |
+|------------|-----------|--------|----------|---------|
+| Cracks     | 0.99      | 1.00   | 1.00     | 185     |
+| LER        | 0.92      | 1.00   | 0.96     | 191     |
+| Bridges    | 0.98      | 0.93   | 0.95     | 216     |
+| CMP        | 0.99      | 1.00   | 0.99     | 197     |
+| Good       | 1.00      | 0.95   | 0.97     | 193     |
+| Opens      | 0.98      | 1.00   | 0.99     | 201     |
+| Vias       | 1.00      | 1.00   | 1.00     | 193     |
+| **Overall**| **0.98**      | **0.98**   | **0.98**     | **1376**    |
+
+
+---
+
+### 🔹 Confusion Matrix
+
+The confusion matrix for the INT16 ONNX model is available in:
+
+
+<img width="720" height="520" alt="Screenshot 2026-02-09 043747" src="https://github.com/user-attachments/assets/26179f5c-7f5d-42d9-8c72-8663587f6bda" />
+
+
+
+---
+
+## 🗺️ Repository Structure
+
+```bash
+├── dataset/
+│   ├── dataset_link.md
+├── idea_submission/
+│   ├── Niriksh_phase1.pdf
+├── model/
+│   └── Niriksh_mobilenetv3_int16.onnx
+├── script/
+│   ├── Niriksh_mobilenetv3.ipynb 
+└── README.md
+```
+
+---
+
+## 🚀 How to Run
+
+### 1️⃣ Setting Dataset
+* Make a shortcut of the provided dataset on your Google Drive account.
+
+### 2️⃣ Running the Model
+* Download the script file "Niriksh_mobilenetv3.ipynb".
+* Open Google Colab and upload it.
+* Make the respective file paths changes.
+* Hit Run all.
+
+---
+
+## 🏭 Deployment Perspective
+
+* Designed for:
+
+  * Inline wafer inspection
+  * Die-level quality control
+  * Embedded vision systems
+  
+* Benefits:
+
+  * High accuracy
+  * Compact model size
+  * ONNX compatibility for edge runtimes
+  * Scalable to new defect classes
+
+---
+
+
+# Phase 2 Results
+
+## 📊 Model Results (Test Set – INT16 ONNX)
+
+### 🔹 Overall Performance
 
 | Metric               | Value        |
 |---------------------|-------------|
@@ -194,7 +286,9 @@ The confusion matrix for the INT16 ONNX model is available in:
 | Average Confidence   | 88.80%      |
 | Total Images         | 256         |
 
-**Per-Class Accuracy**
+---
+
+### 🔹 Per-Class Accuracy
 
 | Class      | Accuracy   |
 |-----------|-----------|
@@ -207,7 +301,7 @@ The confusion matrix for the INT16 ONNX model is available in:
 | VIAS      | 3.33%     |
 | OTHERS    | 6.25%     |
 
-**Classification Report**
+### 🔹 Classification Report
 
 | Class      | Precision | Recall | F1-Score | Support |
 |-----------|-----------|--------|----------|---------|
@@ -223,7 +317,7 @@ The confusion matrix for the INT16 ONNX model is available in:
 | **Macro Avg** | 0.43   | 0.43   | 0.41     | 256     |
 | **Weighted Avg** | 0.42 | 0.41  | 0.40     | 256     |
 
-Confusion Matrix for **hackathon_test_dataset**
+### 🔹 Confusion Matrix for **hackathon_test_dataset**
 
 <img width="1091" height="990" alt="confusion_matrix_hackathon_dataset" src="https://github.com/user-attachments/assets/eabbd9d9-59bd-46ce-b76f-d7e08626053f" />
 
