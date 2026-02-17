@@ -10,7 +10,7 @@ This project was developed for a hackathon and focuses on **high-accuracy, effic
 Develop an Edge-AI capable system that can automatically detect and classify defects in semiconductor wafer and die images using AI/ML techniques. The solution must operate reliably in real time on low-power edge hardware, reflecting the practical constraints of semiconductor manufacturing environments.
 
 ---
-### Phase 1
+# Phase 1
 
 ## 🧠 Problem Understanding
 
@@ -181,7 +181,7 @@ The confusion matrix for the INT16 ONNX model is available in:
 ---
 
 
-### Phase 2 Results
+# Phase 2 Results
 
 **Overall Performance**
 
