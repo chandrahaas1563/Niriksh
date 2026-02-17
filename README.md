@@ -34,7 +34,7 @@ This project aims to design a **compact, accurate, and deployable AI model** tha
 1. **Dataset Preparation**
    - Created a custom dataset with **7000+ images**
    - Classes:
-     - `BRIDGES`, `CRACK`, `OPENS`, `CMP`, `LER`, `VIAS`, `GOOD`
+     - `BRIDGES`, `CRACK`, `OPENS`, `CMP`, `LER`, `VIAS`, `GOOD`, `OTHERS`
    - Applied data augmentation:
      - Brightness variation
      - Contrast adjustment
@@ -50,7 +50,7 @@ This project aims to design a **compact, accurate, and deployable AI model** tha
 3. **Training Strategy**
    - Transfer learning using pre-trained MobileNetV3
    - Stage 1: Train classification head with frozen backbone
-   - Stage 2: Fine-tune full network
+   - Stage 2: Fine-tune the full network
 
 4. **Deployment Preparation**
    - Exported trained model to **INT16 ONNX**
@@ -71,7 +71,9 @@ dataset.zip
     ├── OPENS/
     ├── CMP/
     ├── LER/
+    ├── OTHERS/
     └── VIAS/
+    
 ````
 #### **Access the dataset here:** https://drive.google.com/drive/folders/1IJQq4K5m4Q3ggibhiM3BFa9Ulwhy0yNn?usp=drive_link
 * Total images: **7000+ (original + augmented)**
@@ -96,7 +98,7 @@ dataset.zip
 
 ### 🔹 Overall Performance
 
-* **Accuracy**: **98.04%**
+* **Accuracy**: **98.04%** (May vary between 95-98)
 * **Precision**: **0.9812**
 * **Recall**: **0.9804**
 * **F1-Score**: **0.9803**
