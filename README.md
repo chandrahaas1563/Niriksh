@@ -186,45 +186,51 @@ The confusion matrix for the INT16 ONNX model is available in:
 # Phase 2
 
 ## 📊 Model Results (Test Set – INT16 ONNX)
+---
 
-### 🔹 Overall Performance
+## 📊 Overall Results
 
-| Metric               | Value        |
-|---------------------|-------------|
-| Overall Accuracy     | 40.62%      |
-| Average Confidence   | 88.80%      |
-| Total Images         | 296         |
+| Metric             | Value  |
+| ------------------ | ------ |
+| Overall Accuracy   | 40.20% |
+| Average Confidence | 89.41% |
+| Total Images       | 296    |
 
 ---
 
-### 🔹 Per-Class Accuracy
+## 🔹 Per-Class Accuracy
 
-| Class      | Accuracy   |
-|-----------|-----------|
-| CMP       | 63.33%    |
-| LER       | 63.33%    |
-| BRIDGES   | 31.25%    |
-| GOOD      | 54.55%    |
-| CRACK     | 51.61%    |
-| OPENS     | 53.33%    |
-| VIAS      | 3.33%     |
-| OTHERS    | 6.25%     |
+| Class   | Accuracy |
+| ------- | -------- |
+| CMP     | 66.67%   |
+| LER     | 63.33%   |
+| BRIDGES | 43.75%   |
+| GOOD    | 57.58%   |
+| CRACK   | 51.61%   |
+| OPENS   | 53.33%   |
+| OTHERS  | 2.50%    |
+| VIAS    | 43.33%   |
 
-### 🔹 Classification Report
+---
 
-| Class      | Precision | Recall | F1-Score | Support |
-|-----------|-----------|--------|----------|---------|
-| BRIDGES   | 0.40      | 0.33   | 0.36     | 30      |
-| CMP       | 0.36      | 0.68   | 0.47     | 28      |
-| CRACK     | 0.80      | 0.53   | 0.64     | 30      |
-| GOOD      | 0.41      | 0.56   | 0.47     | 32      |
-| LER       | 0.73      | 0.63   | 0.68     | 30      |
-| OPENS     | 0.50      | 0.55   | 0.52     | 29      |
-| VIAS      | 0.03      | 0.06   | 0.04     | 16      |
-| OTHERS    | 0.20      | 0.08   | 0.12     | 61      |
-| **Accuracy** | -       | -      | 0.41     | 256     |
-| **Macro Avg** | 0.43   | 0.43   | 0.41     | 256     |
-| **Weighted Avg** | 0.42 | 0.41  | 0.40     | 256     |
+## 🔹 Classification Report
+
+| Class            | Precision | Recall | F1-Score | Support |
+| ---------------- | --------- | ------ | -------- | ------- |
+| BRIDGES          | 0.61      | 0.44   | 0.51     | 32      |
+| CMP              | 0.32      | 0.67   | 0.43     | 30      |
+| CRACK            | 0.67      | 0.52   | 0.58     | 31      |
+| GOOD             | 0.37      | 0.58   | 0.45     | 33      |
+| LER              | 0.66      | 0.63   | 0.64     | 30      |
+| OPENS            | 0.40      | 0.53   | 0.46     | 30      |
+| VIAS             | 0.21      | 0.43   | 0.28     | 30      |
+| OTHERS           | 0.50      | 0.03   | 0.05     | 80      |
+| **Accuracy**     | -         | -      | **0.40** | **296** |
+| **Macro Avg**    | 0.47      | 0.48   | 0.43     | 296     |
+| **Weighted Avg** | 0.47      | 0.40   | 0.36     | 296     |
+
+---
+
 
 ### 🔹 Confusion Matrix for **hackathon_test_dataset**
 
