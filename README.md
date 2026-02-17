@@ -10,6 +10,7 @@ This project was developed for a hackathon and focuses on **high-accuracy, effic
 Develop an Edge-AI capable system that can automatically detect and classify defects in semiconductor wafer and die images using AI/ML techniques. The solution must operate reliably in real time on low-power edge hardware, reflecting the practical constraints of semiconductor manufacturing environments.
 
 ---
+### Phase 1
 
 ## 🧠 Problem Understanding
 
@@ -178,3 +179,50 @@ The confusion matrix for the INT16 ONNX model is available in:
   * Scalable to new defect classes
 
 ---
+
+
+### Phase 2 Results
+
+**Overall Performance**
+
+| Metric               | Value        |
+|---------------------|-------------|
+| Overall Accuracy     | 40.62%      |
+| Average Confidence   | 88.80%      |
+| Total Images         | 256         |
+
+**Per-Class Accuracy**
+
+| Class      | Accuracy   |
+|-----------|-----------|
+| CMP       | 63.33%    |
+| LER       | 63.33%    |
+| BRIDGES   | 31.25%    |
+| GOOD      | 54.55%    |
+| CRACK     | 51.61%    |
+| OPENS     | 53.33%    |
+| VIAS      | 3.33%     |
+| OTHERS    | 6.25%     |
+
+**Classification Report**
+
+| Class      | Precision | Recall | F1-Score | Support |
+|-----------|-----------|--------|----------|---------|
+| BRIDGES   | 0.40      | 0.33   | 0.36     | 30      |
+| CMP       | 0.36      | 0.68   | 0.47     | 28      |
+| CRACK     | 0.80      | 0.53   | 0.64     | 30      |
+| GOOD      | 0.41      | 0.56   | 0.47     | 32      |
+| LER       | 0.73      | 0.63   | 0.68     | 30      |
+| OPENS     | 0.50      | 0.55   | 0.52     | 29      |
+| VIAS      | 0.03      | 0.06   | 0.04     | 16      |
+| OTHERS    | 0.20      | 0.08   | 0.12     | 61      |
+| **Accuracy** | -       | -      | 0.41     | 256     |
+| **Macro Avg** | 0.43   | 0.43   | 0.41     | 256     |
+| **Weighted Avg** | 0.42 | 0.41  | 0.40     | 256     |
+
+Confusion Matrix for **hackathon_test_dataset**
+
+<img width="1091" height="990" alt="confusion_matrix_hackathon_dataset" src="https://github.com/user-attachments/assets/eabbd9d9-59bd-46ce-b76f-d7e08626053f" />
+
+
+
