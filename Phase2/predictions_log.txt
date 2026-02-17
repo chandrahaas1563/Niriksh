@@ -1,0 +1,251 @@
+============================================================
+ONNX INFERENCE LOG
+============================================================
+
+Loading ONNX model...
+✓ ONNX model loaded successfully!
+
+============================================================
+ONNX INFERENCE STARTED
+============================================================
+
+Processing CMP: 30 images
+  ✗ CMP_022.png → LER (88.16%)
+  ✗ CMP_006.png → GOOD (64.34%)
+  ✗ CMP_003.png → OPENS (87.42%)
+  ✗ CMP_004.png → OPENS (98.30%)
+  ✗ CMP_027.png → OPENS (99.90%)
+  ✗ CMP_005.png → VIAS (60.40%)
+  ✗ CMP_025.png → BRIDGES (97.97%)
+  ✗ CMP_007.png → VIAS (95.19%)
+  ✗ CMP_023.png → GOOD (89.97%)
+  Accuracy: 20/30 (66.67%)
+
+Processing LER: 30 images
+  ✗ LER_017.png → CMP (81.90%)
+  ✗ LER_019.png → CMP (72.15%)
+  ✗ LER_026.png → CMP (99.31%)
+  ✗ LER_021.png → OPENS (60.04%)
+  ✗ LER_015.png → OPENS (94.23%)
+  ✗ LER_018.png → OPENS (95.73%)
+  ✗ LER_008.png → GOOD (59.62%)
+  ✗ LER_020.png → OPENS (79.00%)
+  ✗ LER_023.png → OPENS (87.64%)
+  ✗ LER_014.png → OPENS (61.35%)
+  ✗ LER_001.png → GOOD (90.28%)
+  Accuracy: 19/30 (63.33%)
+
+Processing BRIDGES: 32 images
+  ✗ BRG_006.png → GOOD (99.30%)
+  ✗ BRG_005.png → OPENS (74.66%)
+  ✗ BRG_010.png → VIAS (98.73%)
+  ✗ BRG_032.png → OPENS (90.84%)
+  ✗ BRG_002.png → GOOD (91.01%)
+  ✗ BRG_003.png → LER (79.33%)
+  ✗ BRG_011.png → Others (41.94%)
+  ✗ BRG_007.png → VIAS (76.58%)
+  ✗ BRG_008.png → GOOD (67.77%)
+  ✗ BRG_023.png → CMP (97.95%)
+  ✗ BRG_015.png → OPENS (99.55%)
+  ✗ BRG_020.png → VIAS (100.00%)
+  ✗ BRG_014.png → OPENS (98.47%)
+  ✗ BRG_016.png → GOOD (75.19%)
+  ✗ BRG_024.png → VIAS (91.39%)
+  ✗ BRG_022.png → OPENS (82.35%)
+  ✗ BRG_026.png → VIAS (99.21%)
+  ✗ BRG_027.png → OPENS (97.26%)
+  Accuracy: 14/32 (43.75%)
+
+Processing GOOD: 33 images
+  ✗ CLN_008.png → CMP (99.68%)
+  ✗ CLN_025.png → VIAS (88.52%)
+  ✗ CLN_022.png → BRIDGES (81.49%)
+  ✗ CLN_020.png → OPENS (100.00%)
+  ✗ CLN_011.png → CRACK (99.99%)
+  ✗ CLN_024.png → BRIDGES (99.87%)
+  ✗ CLN_026.png → VIAS (51.61%)
+  ✗ CLN_007.png → CMP (100.00%)
+  ✗ CLN_023.png → CMP (95.21%)
+  ✗ CLN_002.png → OPENS (52.16%)
+  ✗ CLN_027.png → VIAS (65.04%)
+  ✗ CLN_031.png → VIAS (99.61%)
+  ✗ CLN_030.png → VIAS (89.12%)
+  ✗ CLN_032.png → OPENS (76.50%)
+  Accuracy: 19/33 (57.58%)
+
+Processing CRACK: 31 images
+  ✗ CRK_016.png → LER (65.73%)
+  ✗ CRK_011.png → VIAS (80.07%)
+  ✗ CRK_022.png → CMP (99.97%)
+  ✗ CRK_025.png → CMP (69.43%)
+  ✗ CRK_019.png → VIAS (100.00%)
+  ✗ CRK_024.png → BRIDGES (80.13%)
+  ✗ CRK_029.png → VIAS (99.93%)
+  ✗ CRK_030.png → VIAS (52.61%)
+  ✗ CRK_004.png → GOOD (99.72%)
+  ✗ CRK_017.png → VIAS (95.66%)
+  ✗ CRK_015.png → GOOD (56.24%)
+  ✗ CRK_021.png → GOOD (98.99%)
+  ✗ CRK_026.png → VIAS (99.93%)
+  ✗ CRK_027.png → GOOD (99.49%)
+  ✗ CRK_028.png → VIAS (100.00%)
+  Accuracy: 16/31 (51.61%)
+
+Processing OPENS: 30 images
+  ✗ OPN_001.png → CMP (100.00%)
+  ✗ OPN_019.png → Others (50.00%)
+  ✗ OPN_026.png → VIAS (63.20%)
+  ✗ OPN_009.png → GOOD (97.71%)
+  ✗ OPN_003.png → CMP (96.46%)
+  ✗ OPN_021.png → CMP (99.98%)
+  ✗ OPN_005.png → VIAS (99.82%)
+  ✗ OPN_030.png → GOOD (73.86%)
+  ✗ OPN_004.png → BRIDGES (99.60%)
+  ✗ OPN_010.png → VIAS (98.18%)
+  ✗ OPN_028.png → GOOD (61.77%)
+  ✗ OPN_022.png → VIAS (91.80%)
+  ✗ OPN_025.png → CMP (86.34%)
+  ✗ OPN_023.png → BRIDGES (95.35%)
+  Accuracy: 16/30 (53.33%)
+
+Processing OTHERS: 80 images
+  ✗ PRT_001.png → OPENS (94.25%)
+  ✗ PRT_002.png → CMP (53.77%)
+  ✗ PRT_030.png → VIAS (99.94%)
+  ✗ PRT_016.png → CMP (89.82%)
+  ✗ PRT_003.png → CMP (77.40%)
+  ✗ PRT_017.png → CMP (98.34%)
+  ✗ PRT_011.png → VIAS (100.00%)
+  ✗ PRT_009.png → CMP (99.99%)
+  ✗ PRT_015.png → VIAS (99.59%)
+  ✗ PRT_022.png → CMP (55.06%)
+  ✗ PRT_018.png → CMP (99.92%)
+  ✗ PRT_007.png → CRACK (90.00%)
+  ✗ PRT_008.png → CMP (100.00%)
+  ✗ PRT_025.png → CMP (62.68%)
+  ✗ PRT_010.png → CMP (99.97%)
+  ✗ PRT_028.png → CMP (76.50%)
+  ✗ PRT_005.png → CMP (93.57%)
+  ✗ PRT_004.png → CMP (100.00%)
+  ✗ PRT_027.png → CMP (76.10%)
+  ✗ PRT_023.png → CRACK (98.09%)
+  ✗ PRT_013.png → VIAS (67.38%)
+  ✗ PRT_026.png → VIAS (97.55%)
+  ✗ PRT_020.png → VIAS (99.71%)
+  ✗ PRT_012.png → CMP (73.06%)
+  ✗ PRT_019.png → VIAS (62.91%)
+  ✗ PRT_021.png → CRACK (99.99%)
+  ✗ PRT_014.png → CMP (99.82%)
+  ✗ PRT_029.png → VIAS (92.92%)
+  ✗ PRT_006.png → CMP (62.42%)
+  ✗ OTH_050.png → OPENS (100.00%)
+  ✗ OTH_002.png → LER (86.82%)
+  ✗ OTH_018.png → VIAS (97.48%)
+  ✗ OTH_020.png → GOOD (99.88%)
+  ✗ OTH_003.png → LER (100.00%)
+  ✗ OTH_013.png → LER (99.05%)
+  ✗ OTH_004.png → OPENS (100.00%)
+  ✗ OTH_008.png → CMP (98.13%)
+  ✗ OTH_019.png → CRACK (99.82%)
+  ✗ OTH_005.png → CMP (86.65%)
+  ✗ OTH_011.png → LER (94.73%)
+  ✗ OTH_007.png → GOOD (85.64%)
+  ✗ OTH_009.png → GOOD (57.62%)
+  ✗ OTH_021.png → LER (67.36%)
+  ✗ OTH_001.png → VIAS (98.70%)
+  ✗ OTH_015.png → VIAS (100.00%)
+  ✗ OTH_006.png → BRIDGES (100.00%)
+  ✗ OTH_010.png → CRACK (99.68%)
+  ✗ OTH_014.png → LER (96.36%)
+  ✗ OTH_017.png → OPENS (99.91%)
+  ✗ OTH_012.png → CMP (100.00%)
+  ✗ OTH_016.png → CMP (99.74%)
+  ✗ OTH_028.png → VIAS (94.38%)
+  ✗ OTH_038.png → VIAS (100.00%)
+  ✗ OTH_024.png → VIAS (76.44%)
+  ✗ OTH_034.png → CMP (89.45%)
+  ✗ OTH_026.png → GOOD (99.78%)
+  ✗ OTH_040.png → VIAS (100.00%)
+  ✗ OTH_048.png → CMP (97.36%)
+  ✗ OTH_025.png → LER (55.42%)
+  ✗ OTH_031.png → VIAS (100.00%)
+  ✗ OTH_049.png → CRACK (61.74%)
+  ✗ OTH_043.png → VIAS (98.15%)
+  ✗ OTH_041.png → VIAS (100.00%)
+  ✗ OTH_030.png → VIAS (100.00%)
+  ✗ OTH_033.png → VIAS (69.42%)
+  ✗ OTH_046.png → CMP (64.10%)
+  ✗ OTH_047.png → BRIDGES (91.44%)
+  ✗ OTH_045.png → GOOD (60.83%)
+  ✗ OTH_029.png → VIAS (100.00%)
+  ✗ OTH_035.png → GOOD (98.98%)
+  ✗ OTH_042.png → VIAS (94.44%)
+  ✗ OTH_032.png → VIAS (100.00%)
+  ✗ OTH_036.png → VIAS (100.00%)
+  ✗ OTH_027.png → CMP (82.98%)
+  ✗ OTH_037.png → VIAS (99.37%)
+  ✗ OTH_039.png → VIAS (99.96%)
+  ✗ OTH_044.png → CMP (99.99%)
+  ✗ OTH_023.png → OPENS (99.80%)
+  Accuracy: 2/80 (2.50%)
+
+Processing VIAS: 30 images
+  ✗ VIA_024.png → GOOD (92.99%)
+  ✗ VIA_017.png → GOOD (99.44%)
+  ✗ VIA_012.png → GOOD (100.00%)
+  ✗ VIA_015.png → CMP (63.20%)
+  ✗ VIA_030.png → GOOD (94.59%)
+  ✗ VIA_010.png → GOOD (99.61%)
+  ✗ VIA_020.png → GOOD (99.99%)
+  ✗ VIA_026.png → BRIDGES (88.67%)
+  ✗ VIA_011.png → CMP (96.91%)
+  ✗ VIA_022.png → GOOD (99.95%)
+  ✗ VIA_029.png → GOOD (99.67%)
+  ✗ VIA_021.png → OPENS (100.00%)
+  ✗ VIA_004.png → CMP (52.69%)
+  ✗ VIA_019.png → GOOD (100.00%)
+  ✗ VIA_009.png → GOOD (69.23%)
+  ✗ VIA_005.png → CMP (52.69%)
+  ✗ VIA_007.png → GOOD (90.72%)
+  Accuracy: 13/30 (43.33%)
+
+============================================================
+OVERALL RESULTS
+============================================================
+Overall Accuracy: 40.20%
+Average Confidence: 89.41%
+Total Images: 296
+
+Per-Class Accuracy:
+  CMP            : 66.67%
+  LER            : 63.33%
+  BRIDGES        : 43.75%
+  GOOD           : 57.58%
+  CRACK          : 51.61%
+  OPENS          : 53.33%
+  OTHERS         : 2.50%
+  VIAS           : 43.33%
+
+============================================================
+CLASSIFICATION REPORT
+============================================================
+              precision    recall  f1-score   support
+
+     BRIDGES       0.61      0.44      0.51        32
+         CMP       0.32      0.67      0.43        30
+       CRACK       0.67      0.52      0.58        31
+        GOOD       0.37      0.58      0.45        33
+         LER       0.66      0.63      0.64        30
+       OPENS       0.40      0.53      0.46        30
+        VIAS       0.21      0.43      0.28        30
+      Others       0.50      0.03      0.05        80
+
+    accuracy                           0.40       296
+   macro avg       0.47      0.48      0.43       296
+weighted avg       0.47      0.40      0.36       296
+
+✓ Confusion matrix saved as 'confusion_matrix_onnx.png'
+
+============================================================
+ ONNX INFERENCE COMPLETED!
+============================================================
