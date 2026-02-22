@@ -318,8 +318,6 @@ An **edge-deployable AI system** that:
 - ✅ GOOD
 - ❓ OTHERS
 
-> ⚠️ **Note:** Artifact folders (`split_data`, `Bridges`) that may be present in the dataset directory are automatically detected and filtered out during data loading.
-
 **Dataset Structure:**
 ```bash
 dataset.zip
@@ -522,17 +520,6 @@ Both FP32 and INT16 ONNX models are evaluated side-by-side on the held-out test 
 
 <div align="center">
 
-### 🎮 Target Platforms
-
-[![NXP](https://img.shields.io/badge/NXP-eIQ-00A3E0?style=flat-square)](https://www.nxp.com)
-[![NVIDIA](https://img.shields.io/badge/NVIDIA-Jetson-76B900?style=flat-square)](https://www.nvidia.com/jetson)
-[![RPi](https://img.shields.io/badge/Raspberry-Pi-A22846?style=flat-square)](https://www.raspberrypi.org)
-[![Intel](https://img.shields.io/badge/Intel-OpenVINO-0071C5?style=flat-square)](https://www.intel.com/openvino)
-
-**Note:** Phase 1 focuses on software implementation. Hardware deployment validation planned for future phases.
-
-</div>
-
 ---
 
 ## 🚀 Quick Start
@@ -686,34 +673,4 @@ Benefits:
 
 ---
 
-## 👥 Team
 
-<div align="center">
-
-**i4C DeepTech Hackathon – Phase 1 & 2**
-
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com)
-
-</div>
-
----
-
-## 📝 License
-
-This project was developed for the **i4C DeepTech Hackathon**. All rights reserved.
-
----
-
-<div align="center">
-
-### ⚠️ Important Notice
-
-**This implementation represents Phase 1 & 2 software development.**
-
-Results are based on test set evaluation. No hardware deployment or real-time performance claims are made at this stage.
-
----
-
-**Made with 💙 for i4C DeepTech Hackathon**
-
-</div>
