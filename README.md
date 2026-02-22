@@ -7,15 +7,110 @@
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)](https://tensorflow.org)
 [![ONNX](https://img.shields.io/badge/ONNX-005CED?style=for-the-badge&logo=onnx&logoColor=white)](https://onnx.ai)
 
-**A lightweight, edge-ready AI system for real-time semiconductor defect classification**
+An **Edge-AI–ready deep learning system** for **automatic detection and classification of semiconductor wafer and die defects**. This project was developed for a hackathon and focuses on **high-accuracy, efficient inference** using **MobileNetV3** and export to **ONNX / TFLITE** for deployment.
 
 [Overview](#-overview) • [Architecture](#-system-architecture) • [Results](#-results) • [Quick Start](#-quick-start) • [Documentation](#-documentation)
 
 ---
 
-### 📥 Access Dataset
+<div align="center">
 
-**The complete dataset is available on Google Drive: [Download Dataset](https://drive.google.com/drive/folders/1IJQq4K5m4Q3ggibhiM3BFa9Ulwhy0yNn?usp=drive_link)**
+## 📌 Problem Statement
+
+</div>
+<div align="left">
+    
+Develop an Edge-AI capable system that can automatically detect and classify defects in semiconductor wafer and die images using AI/ML techniques. The solution must operate reliably in real time on low-power edge hardware, reflecting the practical constraints of semiconductor manufacturing environments.
+
+---
+<div align="center">
+    
+## 🧠 Problem Understanding
+
+</div>
+<div align="left">
+    
+Semiconductor manufacturing requires **fast, accurate, and reliable inspection** of wafers and dies to improve yield and reduce waste.  
+Manual inspection or cloud-based systems introduce:
+- Latency
+- Higher operational cost
+- Limited scalability
+
+This project aims to design a **compact, accurate, and deployable AI model** that can:
+- Perform defect classification automatically
+- Be exported to ONNX for edge deployment
+- Maintain high accuracy with low computational overhead
+
+---
+<div align="center">
+    
+## 🏗️ Approach
+
+</div>
+
+
+<img width="1256" height="497" alt="Screenshot 2026-02-09 044937" src="https://github.com/user-attachments/assets/3c4ec538-2bb6-4ef0-8c21-42b97f3239e3" />
+
+<table>
+<tr>
+<td valign="top" width="55%">
+
+**1. Dataset Preparation**
+- Created a custom dataset with **7000+ images**.
+- Classes: `BRIDGES`, `CRACK`, `OPENS`, `CMP`, `LER`, `VIAS`, `GOOD`, `OTHERS`
+- Applied data augmentation: `Brightness variation`, `Contrast adjustment`, `Rotation`, `Flip`
+- Images resized to **224×224**
+
+</td>
+<td valign="top" width="50%">
+
+**2. Model Selection**
+- Chosen **MobileNetV3-Large** due to:
+  - Low parameter count
+  - High efficiency on edge devices
+  - Strong accuracy–latency trade-off
+
+</td>
+</tr>
+<tr>
+<td valign="top" width="50%">
+
+**3. Training Strategy**
+- Transfer learning using pre-trained MobileNetV3
+- Stage 1: Train classification head with frozen backbone
+- Stage 2: Fine-tune the full network
+
+</td>
+<td valign="top" width="50%">
+
+**4. Deployment Preparation**
+- Exported trained model to **INT16 ONNX**
+- Evaluated using **ONNX Runtime on CPU**
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🗂️ Dataset Structure
+
+* The dataset is designed with the following structure:
+
+```bash
+dataset.zip
+└── Niriksh2.0/
+    ├── GOOD/
+    ├── BRIDGES/
+    ├── CRACK/
+    ├── OPENS/
+    ├── CMP/
+    ├── LER/
+    ├── OTHERS/
+    └── VIAS/
+```
+
+### **Access the dataset here: [Dataset](https://drive.google.com/drive/folders/1IJQq4K5m4Q3ggibhiM3BFa9Ulwhy0yNn?usp=drive_link)**
 
 ---
 
@@ -518,7 +613,7 @@ Both FP32 and INT16 ONNX models are evaluated side-by-side on the held-out test 
 | 🖥️ **CPU-Only Inference** | ONNX Runtime CPUExecutionProvider | No GPU required at edge |
 | 🔧 **3-Stage Training + QAT** | Head → Fine-tune → Quantization-Aware | Maximum accuracy before quantization |
 
-<div align="center">
+
 
 ---
 
@@ -594,7 +689,7 @@ python hackathon_test_dataset_predictions.py
 - Loads hackathon test dataset
 - Runs INT16 ONNX Runtime inference on CPU
 - Calculates per-class metrics
-- Displays and saves confusion matrix
+- Displays and saves the confusion matrix
 
 **Output:** Accuracy, Precision, Recall, F1 + confusion matrix PNG
 
