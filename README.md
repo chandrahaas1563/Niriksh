@@ -15,7 +15,7 @@
 
 ### 📥 Access Dataset
 
-####The complete dataset is available on Google Drive: [Download Dataset](https://drive.google.com/drive/folders/1IJQq4K5m4Q3ggibhiM3BFa9Ulwhy0yNn?usp=drive_link)
+**The complete dataset is available on Google Drive: [Download Dataset](https://drive.google.com/drive/folders/1IJQq4K5m4Q3ggibhiM3BFa9Ulwhy0yNn?usp=drive_link)**
 
 ---
 
@@ -29,7 +29,7 @@
 ---
 ---
 
-# 🚀 Phase 2 – ONNX Inference & Evaluation (Hackathon Submission)
+# 🚀 Phase 2 – ONNX Inference & Evaluation
 
 <div align="center">
 
@@ -57,9 +57,8 @@ Evaluate the previously trained **MobileNetV3-Large ONNX model** on the hackatho
 
 ### Evaluation Scope
 
-- Pure ONNX inference (CPU via ONNX Runtime)
+- Pure ONNX inference
 - Deterministic pipeline
-- Minimal preprocessing (resize + float32 cast only)
 - Metrics generation
 - Confusion matrix visualization
 
@@ -80,13 +79,13 @@ Evaluate the previously trained **MobileNetV3-Large ONNX model** on the hackatho
 
 ---
 
-## 📈 Confusion Matrix (Phase-2 Evaluation)
+## 📈 Confusion Matrix (Phase-2)
 
 <div align="center">
 
-![Phase-2 Confusion Matrix](https://github.com/user-attachments/assets/eabbd9d9-59bd-46ce-b76f-d7e08626053f)
+<img src="https://github.com/user-attachments/assets/eabbd9d9-59bd-46ce-b76f-d7e08626053f" alt="Phase-2 Confusion Matrix" width="650"/>
 
-**Evaluation performed using strict ONNX inference pipeline**
+**Evaluation performed using ONNX inference pipeline**
 
 </div>
 
