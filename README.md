@@ -118,13 +118,20 @@ Evaluate the previously trained **MobileNetV3-Large ONNX model** on the hackatho
 <th>File</th>
 <th>Description</th>
 </tr>
+    
 <tr>
 <td><code>hackathon_test_dataset_predictions.ipynb</code></td>
-<td>ONNX inference notebook used for Phase-2 evaluation</td>
+<td>ONNX inference script used for Phase-2</td>
 </tr>
+
 <tr>
 <td><code>hackathon_test_dataset_predictions.py</code></td>
-<td>ONNX inference script used for Phase-2 evaluation</td>
+<td>ONNX inference script used for Phase-2</td>
+</tr>
+
+<tr>
+<td><code>confusion_matrix_hackathon_dataset.png</code></td>
+<td>Confusion matrix of hackathon test dataset</td>
 </tr>
 </table>
 
@@ -151,7 +158,7 @@ Image → Resize (224×224) → Float32 Cast → ONNX Runtime (CPU) → Argmax �
 | **Fine-Tuning** | Not performed |
 | **Parameter Modification** | None |
 | **Class Handling** | Test mismatches mapped to `OTHERS` |
-| **Evaluation Type** | Fully deterministic ONNX inference on CPU |
+| **Evaluation Type** | Fully deterministic ONNX inference |
 
 </td>
 </tr>
@@ -187,30 +194,6 @@ Misclassifications primarily occur for:
 - **VIAS** – Low F1 (0.28) with significant confusion across classes
 
 Such patterns are consistent with structural similarity in wafer defect morphology and the class distribution shift between the Phase-1 training data and the hackathon test set.
-
-</td>
-</tr>
-</table>
-
----
-
-## 📈 Generalization Insight
-
-<div align="center">
-
-The model demonstrates stable generalization capability under strict evaluation constraints.
-
-</div>
-
-<table>
-<tr>
-<td align="center">
-
-**Evaluation Constraints Applied**
-
-- No retraining
-- No architectural modification
-- Class label mismatch in test dataset
 
 </td>
 </tr>
@@ -293,7 +276,7 @@ An **edge-deployable AI system** that:
 
 | Layer | Technology | Purpose |
 |:-----:|:----------:|:-------:|
-| **Input** | RGB Images | 224×224 wafer defect images |
+| **Input** | Grayscale Images | 224×224 wafer defect images |
 | **Preprocessing** | TF Keras + MobileNetV3 preprocess_input | Augmentation & normalization |
 | **Model** | MobileNetV3-Large | Lightweight CNN architecture |
 | **Training** | Transfer Learning + Fine-Tuning + QAT | ImageNet weights → quantization-aware |
@@ -311,7 +294,7 @@ An **edge-deployable AI system** that:
 |:---------:|:-----:|
 | 📦 **Total Images** | 7000+ (original + augmented) |
 | 🏷️ **Classes** | 8 categories |
-| 🎨 **Format** | RGB (224×224) |
+| 🎨 **Format** | Grayscale(224×224) |
 | 📐 **Split Ratio** | 60 / 20 / 20 (train / val / test) |
 | 🔄 **Augmentation** | RandomFlip, RandomRotation(0.15), RandomZoom(0.15), RandomContrast(0.1) |
 | 📂 **Source Folder** | `Niriksh3.0` |
