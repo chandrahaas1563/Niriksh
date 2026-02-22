@@ -272,7 +272,7 @@ An **edge-deployable AI system** that:
 
 ---
 
-### 🎯 Architecture Highlights
+## 🎯 Architecture Highlights
 
 | Layer | Technology | Purpose |
 |:-----:|:----------:|:-------:|
