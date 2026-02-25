@@ -170,7 +170,7 @@ Evaluate the previously trained **MobileNetV3-Large ONNX model** on the hackatho
 
 <div align="center">
 
-<img src="https://github.com/user-attachments/assets/eabbd9d9-59bd-46ce-b76f-d7e08626053f" alt="Phase-2 Confusion Matrix" width="650"/>
+<img src="https://github.com/user-attachments/assets/eabbd9d9-59bd-46ce-b76f-d7e08626053f" alt="Phase-2 Confusion Matrix" width="700"/>
 
 **Evaluation performed using ONNX inference pipeline**
 
@@ -199,7 +199,8 @@ Evaluate the previously trained **MobileNetV3-Large ONNX model** on the hackatho
 ---
 
 ## 📂 Phase-2 Submission Files
-
+<div align="center">
+    
 <table>
 <tr>
 <th>File</th>
@@ -222,6 +223,8 @@ Evaluate the previously trained **MobileNetV3-Large ONNX model** on the hackatho
 </tr>
 </table>
 
+</div>
+
 ---
 
 ## ⚙️ Phase-2 Inference Pipeline
@@ -234,6 +237,8 @@ Image → Resize (224×224) → Float32 Cast → ONNX Runtime (CPU) → Argmax �
 
 ## ⚙️ Key Characteristics
 
+<div align="center">
+    
 <table>
 <tr>
 <td width="100%">
@@ -250,6 +255,8 @@ Image → Resize (224×224) → Float32 Cast → ONNX Runtime (CPU) → Argmax �
 </td>
 </tr>
 </table>
+
+</div>
 
 ---
 
@@ -290,6 +297,8 @@ Such patterns are consistent with structural similarity in wafer defect morpholo
 
 ## 🏁 Compliance Statement
 
+<div align="center">
+    
 <table>
 <tr>
 <td width="100%">
@@ -305,9 +314,10 @@ Phase-2 evaluation strictly adheres to hackathon rules:
 </tr>
 </table>
 
+</div>
+
 ---
 
-</div>
 
 ## 🎯 Overview (Phase 1)
 
@@ -361,6 +371,8 @@ An **edge-deployable AI system** that:
 
 ## 🎯 Architecture Highlights
 
+<div align="center">
+    
 | Layer | Technology | Purpose |
 |:-----:|:----------:|:-------:|
 | **Input** | Grayscale Images | 224×224 wafer defect images |
@@ -368,6 +380,8 @@ An **edge-deployable AI system** that:
 | **Model** | MobileNetV3-Large | Lightweight CNN architecture |
 | **Training** | Transfer Learning + Fine-Tuning + QAT | ImageNet weights → quantization-aware |
 | **Export** | tf2onnx (opset 13) → Static INT16 | Edge deployment compatibility |
+
+</div>
 
 ---
 
