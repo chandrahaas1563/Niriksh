@@ -112,16 +112,7 @@ dataset.zip
 
 ### **Access the dataset here: [Dataset](https://drive.google.com/drive/folders/1IJQq4K5m4Q3ggibhiM3BFa9Ulwhy0yNn?usp=drive_link)**
 
----
 
-### 📦 Trained Models
-
-| Model | Format | Download |
-|:-----:|:------:|:--------:|
-| **Edge Deployment** | ONNX (INT16) | [Download](https://github.com) |
-| **Full Precision** | ONNX (FP32) | [Download](https://github.com) |
-
----
 ---
 
 # 🚀 Phase 2 – ONNX Inference & Evaluation
