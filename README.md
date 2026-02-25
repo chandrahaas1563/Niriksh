@@ -49,7 +49,8 @@ This project aims to design a **compact, accurate, and deployable AI model** tha
 </div>
 
 
-<img width="1256" height="497" alt="Screenshot 2026-02-09 044937" src="https://github.com/user-attachments/assets/3c4ec538-2bb6-4ef0-8c21-42b97f3239e3" />
+<img width="1697" height="732" alt="Screenshot 2026-02-26 020903" src="https://github.com/user-attachments/assets/41037a83-902f-401f-a8f9-e5e49270b08b" />
+
 
 <table>
 <tr>
